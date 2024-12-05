@@ -1,0 +1,90 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #6a11cb, #2575fc);
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Animación 1: Rotación al hover */
+.rotate-box {
+  background: #ff6347;
+  padding: 20px 40px;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-box:hover {
+  transform: rotate(360deg);
+}
+
+/* Animación 2: Transición de botón */
+.transition-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.transition-button:hover {
+  background-color: #45a049;
+}
+
+/* Animación 3: Texto parpadeante */
+.blinking-text {
+  font-size: 20px;
+  animation: blink 1s step-start infinite;
+}
+
+/* Keyframes */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
