@@ -1,0 +1,147 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #1e1e2f;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .title {
+    font-size: 24px;
+    animation: floatText 3s ease-in-out infinite;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Main */
+  main {
+    flex: 1; /* Hace que el contenido principal se expanda */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Animación 1: Movimiento al hover */
+  .move-box {
+    background: #ff5733;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .move-box:hover {
+    transform: translateX(20px);
+  }
+  
+  /* Animación 2: Botón con transición */
+  .transition-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+  }
+  
+  .transition-button:hover {
+    transform: scale(1.2);
+    background-color: #218838;
+  }
+  
+  /* Animación 3: Flotación */
+  .floating-text {
+    font-size: 20px;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e1e2f;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Asegura que el footer se quede abajo */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container p {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons li a {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  /* Keyframes */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floatText {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
