@@ -1,0 +1,93 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  color: black;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  animation: rotateText 3s linear infinite;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Animación 1: Escala al hover */
+.scale-box {
+  background: #ffcc00;
+  padding: 20px 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.scale-box:hover {
+  transform: scale(1.2);
+}
+
+/* Animación 2: Transición de fuente */
+.transition-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: font-size 0.4s ease;
+}
+
+.transition-button:hover {
+  font-size: 20px;
+}
+
+/* Animación 3: Rotación de texto */
+.rotating-text {
+  font-size: 20px;
+  animation: rotate 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(-15deg);
+    opacity: 0.7;
+  }
+  to {
+    transform: rotate(15deg);
+    opacity: 1;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
